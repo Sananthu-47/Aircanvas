@@ -4,9 +4,7 @@ import time
 
 class drawingCanvas():
     def __init__(self):
-        self.penrange = np.load('bluerange.npy')
-        # self.penrange = np.load('penrange.npy')
-        # self.redrange = np.load('redrange.npy')
+        self.penrange = np.load('penrange.npy')
         self.cap = cv2.VideoCapture(0)
         self.cap.set(3,800) #width
         self.cap.set(4,720) #height
